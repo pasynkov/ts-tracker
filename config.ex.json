@@ -1,0 +1,13 @@
+{
+    "token": "WORKSNAPS TOKEN",
+    "projectId": 0000000,
+    "startPeriod": [2015, 8, 4],
+    "period": {
+        "week": 2
+    },
+    "freeDays": ["Sat", "Sun"],
+    "plan": {
+        "hours": 8,
+        "days": 10
+    }
+}
