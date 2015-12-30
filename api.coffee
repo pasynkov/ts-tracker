@@ -59,17 +59,18 @@ class Api
       h++
     else
       unless human
-        m = Math.round(m/60)
+        m = +(m/60).toFixed(1)
 
-    result += "#{h}"
     if m
       if human
+        result += "#{h}"
         result += "ч.#{m}м."
       else
-        result += ".#{m}"
+        h += m
+        result = "#{h}ч."
+    else
+      result += "#{h}ч."
 
-    unless human
-      result += "ч."
 
     return result
 
